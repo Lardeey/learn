@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>CAMPSITE REGISTRATION</h3>
+    <form action="">
+      <fieldset>
+        <div>
+            <label><b>Name:</b></label> &nbsp;&nbsp;
+            <select name="Title" id="Title">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Master">Master</option>
+                <option value="Dr">Dr</option>
+                <option value="Prof">Prof</option>
+            </select>
+            <input type="text" class="input_text" placeholder="First Name">
+            <input type="text" class="input_text" placeholder="Last Name"> 
+        </div>
+        <br><br>
+        <div>
+            <label><b>Guests:</b></label> &nbsp;&nbsp;
+            <input type="text" class="input_text" placeholder="18+ years">
+            <input type="text" class="input_text" placeholder="2 - 17years"> 
+            <input type="text" class="input_text" placeholder="<2 years"> 
+        </div>
+        <br><br>
+        <div>
+            <label><b>Contact:</b></label> &nbsp;&nbsp;
+            <input type="text" class="input_text" placeholder="Email">
+        </div>
+        <br><br>
+        <div>
+            <label><b>Phone:</b></label> &nbsp;&nbsp;
+            <input type="text" class="input_text" placeholder="Phone (xxx) - xxx xxxx">
+        </div>
+        <br><br>
+        <div>
+            <label><b>Checkin:</b></label> &nbsp;&nbsp;
+            <input type="date" id="Checkin" name="stay-start" value="2020-12-12" min="2020-01-01" max="2020-12-31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><b>Checkout:</b></label> &nbsp;&nbsp;
+            <input type="date" id="Checkout" name="stay-end" value="2020-12-12" min="2020-01-01" max="2020-12-31">
+        </div>
+        <br><br>
+        <div>
+            <label><b>Equipment type:</b></label> &nbsp;&nbsp;
+            <select name="Equipment" id="Equipment">
+                <option value="Travel Trailer">Travel Trailer</option>
+                <option value="Scooter">Scooter</option>
+                <option value="Truck">Truck</option>
+                <option value="Slides">Slides</option>
+                <option value="SUV">SUV</option>
+                <option value="Venza">Venza</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><b>Slide-outs:</b></label> &nbsp;&nbsp;
+            <input type="radio" id="Yes" name="stayin" value="Yes" checked>
+            <label for="">Yes</label>
+            <input type="radio" id="No" name="stayout" value="No"> 
+            <label for="">No</label>
+        </div>
+        <br>
+        <label><b>Required Service</b></label>
+        <textarea id="requiredService" name="requiredService" rows="3" cols="7">Hydro  Water Sewer
+        </textarea> &nbsp;&nbsp;
+        <label for=""><b>Pets</b></label>
+        <input type="radio" id="yes" name="pets" value="yes" checked>
+        <label for="">Yes</label>
+        <input type="radio" id="no" name="pets" value="no">
+        <label for="">No</label>
+        <br>
+        <br>
+        <label for=""><b>Comments</b></label>
+        <textarea id="comment" name="coment" rows="5" cols="50" placeholder="Additional comments">
+        </textarea>
+        <br>
+        <br>
+        <button type="submit">
+        <b>Request Reservation</b>
+        </button>
+        <button style="margin-left:400px;"type="button">
+        <b>Cancel</b>
+        </button>
+        </fieldset>
+    </form>
+</body>
+</html>
